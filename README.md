@@ -50,11 +50,14 @@ Proceed to describe how to install / setup one's local environment / get started
 
 
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
+Create a new Article:
+`python main.py {article_name}`
 
-`write-your-code-here`
+List all Articles:
+`python main.py {anyting} -l`
 
+Go into article {article_name}:
+`python main.py {article_name}`
 
 ## Project Status
 Project is _in progress_
