@@ -12,7 +12,9 @@ parser.add_argument('--list', '-l', action="store_true") # Boolean which is true
 parser.add_argument('--search', '-s', action="store_true") # searches in database for the correct value
 parser.add_argument('--path', '-p', default=None ,type=str) # allows to set new path  
 
-with open('config.json', 'r') as file:
+# script_path=os.path.dirname(os.path.abspath(__file__))
+
+with open(os.path.join(os.getenv("HOME"), '.explain_config'), 'r') as file:
     config = json.load(file)
 base_path = config['path']
 editor = config['editor']
@@ -22,8 +24,12 @@ tail = {'tags' : ['tag1', 'tag2']}
 
 def open_text(base_path, name, editor='subl'):
     f_path = os.path.join(base_path, name)
+    if not os.path.exists(base_path):
+        os.makedirs(base_path)
+
     if not os.path.isfile(f_path):
         create_template(f_path)
+
     os.system('{} {}'.format(editor, f_path))
 
 def create_template(f_path):
@@ -45,9 +51,7 @@ def list_files(path):
 def search_files(path, name):
     pass
 
-    
-    
-if __name__ == '__main__':
+def main():
     args = parser.parse_args()
     name = args.name
     f_new = args.new 
@@ -60,6 +64,9 @@ if __name__ == '__main__':
         search_files(base_path, name)
     else:
         open_text(base_path, name, editor=editor)
-
+    
+    
+if __name__ == '__main__':
+    main()
 
     
