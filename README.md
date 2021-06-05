@@ -20,10 +20,10 @@
 ## General Information
 - This project aims to be a hacky editor based knowledgebase/wiki
 - In case you find yourself regularily doing one of the following:
-  - Searching for some Information which you already retained yesterday
-  - Rereading the same stuff the get insights which you already worked yourself through
+  - Searching for some information which you already retained yesterday
+  - Rereading the same stuff to get insights which you already worked yourself through
   - Loosing your old notes and then instead writing new ones....
-- Make the friction to note down, retain and use your knowledge as fast as possible
+- Make the friction to note down, retain and use your knowledge as low as possible by making it as fast as possible
 - I always wanted to create something that 1000s of people may find useful, so it is best to start with something that I may find very useful myself ;) 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
@@ -84,7 +84,6 @@ To do:
 Give credit here.
 - This project was inspired by my uncle
 <!-- - This project was based on [this tutorial](https://www.example.com). -->
-- Many thanks to everyone
 
 
 <!-- ## Contact -->
