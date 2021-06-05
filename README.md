@@ -53,11 +53,15 @@ Proceed to describe how to install / setup one's local environment / get started
 Create a new Article:
 `python main.py {article_name}`
 
+Go into article {article_name}:
+`python main.py {article_name}`
+
 List all Articles:
 `python main.py {anyting} -l`
 
-Go into article {article_name}:
-`python main.py {article_name}`
+Search all Articles:
+`python main.py {anyting} -s`
+
 
 ## Project Status
 Project is _in progress_
@@ -75,9 +79,14 @@ Room for improvement:
 - Maybe easy creation of Anki Cards
 
 To do:
-- Search by Tags
-- Make it a bash script
-- Write a setup.py
+- [ ] Search by Tags
+- [ ] Visualization via Markdown
+- [ ] Show latest changes (file+header)
+- [ ] Counter how often file was accessed
+- [x] Implement Basic Tests
+- [x] Make it a script
+- [x] Write a setup.py
+
 
 
 ## Acknowledgements
