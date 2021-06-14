@@ -40,6 +40,7 @@ def create_template(f_path):
             file.write('-'*10)
             file.write('\n{} \n'.format(tail))
             file.write('-'*20)
+            file.write('\n'*2)
     
     time.sleep(0.01)
 
@@ -61,7 +62,7 @@ def search_files(path):
         path (str): path/to/data
     """
     out_dict = {}
-    for file in os.listdir(path):
+    for file in sorted(os.listdir(path)):
         file_headers = search_file(path, file)
         out_dict[file] = file_headers
     print_dict(out_dict)

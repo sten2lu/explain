@@ -80,6 +80,7 @@ Room for improvement:
 
 To do:
 - [ ] Search by Tags
+- [ ] Creation of new Entry with file-Tag
 - [ ] Visualization via Markdown
 - [ ] Show latest changes (file+header)
 - [ ] Counter how often file was accessed
