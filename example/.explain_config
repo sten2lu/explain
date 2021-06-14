@@ -1,5 +1,5 @@
 {
     "path": "{HOME}/explain_base",
-    "editor" : "subl",
+    "editor" : "code",
     "name" : "Max Mueller"
 }

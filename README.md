@@ -81,9 +81,10 @@ Room for improvement:
 To do:
 - [ ] Search by Tags
 - [ ] Creation of new Entry with file-Tag
-- [ ] Visualization via Markdown
 - [ ] Show latest changes (file+header)
 - [ ] Counter how often file was accessed
+- [x] Visualization via Markdown
+- [x] Go to Folder Structure
 - [x] Implement Basic Tests
 - [x] Make it a script
 - [x] Write a setup.py

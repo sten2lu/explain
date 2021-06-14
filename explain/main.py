@@ -26,8 +26,13 @@ def open_text(base_path, name, editor='subl'):
     if not os.path.exists(base_path):
         os.makedirs(base_path)
 
-    if not os.path.isfile(f_path):
-        create_template(f_path)
+    if not os.path.isdir(f_path):
+        os.makedirs(f_path)
+
+    file = os.path.join(f_path, '{}.md'.format(name))
+    
+    if not os.path.isfile(file):
+        create_template(file)
 
     os.system('{} {}'.format(editor, f_path))
 
@@ -37,9 +42,9 @@ def create_template(f_path):
             file.write('##')
             for i in range(7):
                 file.write('\n')
-            file.write('-'*10)
+            file.write('-'*3)
             file.write('\n{} \n'.format(tail))
-            file.write('-'*20)
+            file.write('-'*3)
             file.write('\n'*2)
     
     time.sleep(0.01)
@@ -63,7 +68,8 @@ def search_files(path):
     """
     out_dict = {}
     for file in sorted(os.listdir(path)):
-        file_headers = search_file(path, file)
+        filepath=os.path.join(path, file)
+        file_headers = search_file(filepath, file)
         out_dict[file] = file_headers
     print_dict(out_dict)
 
